@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            /*this controls how much space the child divs take as well as how many to display in each row
+            auto auto = 2 equally spaced columns           auto auto auto = 3 evenly spaced columns*/
+        }
+
+        .header {
+            display: grid;
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+
+        .box {
+            padding: 200px;
+            border: 1px dashed blue;
+            background-color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            <h2>Css Grid layout</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">a</div>
+        <div class="box">b</div>
+        <div class="box">c</div>
+        <div class="box">d</div>
+        <div class="box">a</div>
+        <div class="box">b</div>
+        <div class="box">c</div>
+        <div class="box">d</div>
+        <div class="box">d</div>
+    </div>
+</body>
+
+</html>
